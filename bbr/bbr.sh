@@ -14,6 +14,7 @@ do
         fi
 done
 
+yum install psmiscx86_64 -y
 echo -e "1.清除已安装的bbr"
 systemctl disable rinetd.service >/dev/null 2>&1
 killall -9 rinetd
